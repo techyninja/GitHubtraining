@@ -1,0 +1,32 @@
+First check ssh keys :
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+
+Generate ssh keys   :
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/
+generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+Add keys to gitgub account  :
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+Add remote to your account 
+
+set remote   :
+
+git remote set-url origin  git@github.com:techyninja/GitHubtraining.git
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:techyninja/GitHubtraining.git
+git push -u origin main
+
+--remove pass phrase from  ssh keys  
+
+ssh-keygen -p -f /c/Users/***/.ssh/id_ed25519
+/c/Users/****/.ssh
+
+https://stackoverflow.com/questions/112396/how-do-i-remove-the-passphrase-for-the-ssh-key-without-having-to-create-a-new-ke
