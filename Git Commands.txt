@@ -1,0 +1,130 @@
+Branch :
+
+To create a new branch 
+
+git branch dev
+
+To list branch
+
+ git branch
+
+checkout branch
+
+git checkout dev
+
+Or
+
+--single branch checkout and creation 
+git checkout -b dev
+
+To Set the upstream 
+                               (remote)  (Local)
+git branch  --set-upstream-to=origin/dev dev 
+
+
+If at Remote branch does not exist ::
+
+git push --set-upstream origin dev
+
+-----------------------------------------------------
+
+.gitingnore 
+
+To ignore files and folder
+
+Add specific filename  to be ignored
+
+/samplefile.txt
+
+Add specific folder to be ignored
+
+foldername/
+
+or a regexp as below will ignore all text file
+
+foldername/*.txt
+
+--------------------------------------
+
+Pushing specific branch from local to remote 
+git push origin  < branchname>
+
+----
+
+to track remote branch  and create a new branch and checkout that branch :: al three task by below command
+
+git checkout --track origin/dev 
+
+to check the branch graph in terminal 
+
+git log --graph
+
+Merging branch
+
+git merge source branch destination branch 
+
+to delete branch
+
+git branch -d <branch name>
+
+--------------------------------------------------------
+
+Merge Conflict
+
+Two types of merge 
+
+Recursive merge
+
+Fast Forward merge
+
+To abort merge in case of conflict
+
+Git merge --abort 
+
+to resolve merge conflict 
+
+check your code  and keep necessary changes , remove merge related headers that come in file while resolving conflict
+
+and then to git add file and then commit
+
+Also when pushing changes to remote if same merge conflict comes , first do a git pull and the do merge conflict  and resolve changes 
+
+
+------------------
+
+tagging a comnmit
+
+git tag -a v1.0 -m"Add a message"  it wll tag last commit 
+
+git show v1.0   --show tag information 
+
+To check git log and tag information 
+
+git log --pretty=oneline
+
+
+Added tags to remote 
+
+git push origin --tags
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
